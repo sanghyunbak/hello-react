@@ -14,22 +14,24 @@ import SyncSetStateWithArrowFunction from './sync_setState_with_arrow_function';
 import CallBack from './chapter3_component/call_back';
 import Say from './chapter3_component/Say';
 import SayColor from './chapter3_component/SayColor';
+import EventPractice from './chapter4_event_hendling/EventPractice';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-      <SayColor/>
-      <Say/>
-      <CallBack/>
-      <SyncSetStateWithArrowFunction/>
-      <StateTestWithoutConstructor/>
-      <StateTest/>
-      <AppTestCss/>
-      <AppAddStyleDirect/>
-      <AppAddStyle/>
-      <AppNull/>
-      <AppVarTest/>
-      <App/>
+      <EventPractice/>
+      {/*<SayColor/>*/}
+      {/*<Say/>*/}
+      {/*<CallBack/>*/}
+      {/*<SyncSetStateWithArrowFunction/>*/}
+      {/*<StateTestWithoutConstructor/>*/}
+      {/*<StateTest/>*/}
+      {/*<AppTestCss/>*/}
+      {/*<AppAddStyleDirect/>*/}
+      {/*<AppAddStyle/>*/}
+      {/*<AppNull/>*/}
+      {/*<AppVarTest/>*/}
+      {/*<App/>*/}
     </React.StrictMode>,
 );
 
