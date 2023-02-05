@@ -15,10 +15,13 @@ import CallBack from './chapter3_component/call_back';
 import Say from './chapter3_component/Say';
 import SayColor from './chapter3_component/SayColor';
 import EventPractice from './chapter4_event_hendling/EventPractice';
+import EventPracticeOnChange
+  from './chapter4_event_hendling/EventPracticeOnChange';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
+      <EventPracticeOnChange/>
       <EventPractice/>
       {/*<SayColor/>*/}
       {/*<Say/>*/}
