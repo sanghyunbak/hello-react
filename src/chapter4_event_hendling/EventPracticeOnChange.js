@@ -11,7 +11,13 @@ class EventPracticeOnChange extends Component {
               placeholder="아무거나 입력해 보세요"
               onChange={
                 (e) => {
-                  console.log(e)
+                  e.persist() // v17부터 아무 의미 없음
+                  console.log(e);
+                  setTimeout(()=>{
+                    console.warn(e.type);
+                    console.warn(e.target.value);
+                      }
+                  , 1);
                 }
               }
           />

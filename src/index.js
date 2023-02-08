@@ -17,10 +17,13 @@ import SayColor from './chapter3_component/SayColor';
 import EventPractice from './chapter4_event_hendling/EventPractice';
 import EventPracticeOnChange
   from './chapter4_event_hendling/EventPracticeOnChange';
+import EventPracticeWithState
+  from './chapter4_event_hendling/EventPracticeWithState';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
+      <EventPracticeWithState/>
       <EventPracticeOnChange/>
       <EventPractice/>
       {/*<SayColor/>*/}
