@@ -21,7 +21,7 @@ const EventPracticeUsingFunctionalMethod = () => {
 
   return (
       <div>
-        <h1>이벤트 연습</h1>
+        <h1>두 개의 인풋 이벤트 연습 (using functional component)</h1>
         <input
             type="text"
             name="username"
