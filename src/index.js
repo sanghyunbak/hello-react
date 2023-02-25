@@ -19,10 +19,18 @@ import EventPracticeOnChange
   from './chapter4_event_hendling/EventPracticeOnChange';
 import EventPracticeWithState
   from './chapter4_event_hendling/EventPracticeWithState';
+import EventPractice_using_method
+  from './chapter4_event_hendling/EventPractice_using_class_components';
+import EventPractice_using_functional_components
+  from './chapter4_event_hendling/EventPractice_using_functional_components';
+import EventPractice_using_class_components
+  from './chapter4_event_hendling/EventPractice_using_class_components';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
+      <EventPractice_using_functional_components />
+      <EventPractice_using_class_components />
       <EventPracticeWithState/>
       <EventPracticeOnChange/>
       <EventPractice/>
