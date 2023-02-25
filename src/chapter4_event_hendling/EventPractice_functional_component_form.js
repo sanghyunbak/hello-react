@@ -14,6 +14,15 @@ const EventPracticeFunctionalComponentForm = () => {
     setForm(nextForm);
   };
 
+  // Reason why use Spread operator
+  // let a = {1: "2", "2": 3};
+  // let b = {...a, "2": 2};
+  // let c = {a, "2": 2};
+  //
+  // result
+  // b = {1: "2", "2": 2};
+  // c = {{1: "2", "2": 3}, "2": 2};
+
   const onClick = () => {
     alert(username + ': ' + message);
     setForm({
