@@ -38,10 +38,13 @@ import ParentScrollBox from './chapter5_ref/ParentScrollBox';
 import IterationSample from './chapter6_map/IterationSample';
 import IterationSampleUseState from './chapter6_map/IterationSampleUseState';
 import IterationSampleAddData from './chapter6_map/IterationSampleAddData';
+import IterationSampleDelete from './chapter6_map/IterationSampleDelete';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
+      <p> ADD DELETE DATA</p>
+      <IterationSampleDelete />
       <p> ADD data </p>
       <IterationSampleAddData />
       <p> Iteration sample useState</p>
