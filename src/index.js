@@ -27,10 +27,12 @@ import EventPractice_using_class_components
   from './chapter4_event_hendling/EventPractice_using_class_components';
 import EventPractice_functional_component_form
   from './chapter4_event_hendling/EventPractice_functional_component_form';
+import ValidationSample from './chapter5_ref/ValidationSample';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
+      <ValidationSample />
       <EventPractice_functional_component_form />
       <EventPractice_using_functional_components />
       <EventPractice_using_class_components />
