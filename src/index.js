@@ -28,10 +28,24 @@ import EventPractice_using_class_components
 import EventPractice_functional_component_form
   from './chapter4_event_hendling/EventPractice_functional_component_form';
 import ValidationSample from './chapter5_ref/ValidationSample';
+import RefUsingCreateRef from './chapter5_ref/RefUsingCreateRef';
+import ValidationSampleWithRefFocus
+  from './chapter5_ref/ValidationSampleWithRefFocus';
+import ScrollBox from './chapter5_ref/ScrollBox';
+import ScrollBoxWithPullDownMethod
+  from './chapter5_ref/ScrollBoxWithPullDownMethod';
+import ParentScrollBox from './chapter5_ref/ParentScrollBox';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
+      <ParentScrollBox />
+      {/*<ScrollBoxWithPullDownMethod ref={(ref) => this.scrollBox = ref}/>*/}
+      {/*<button onClick={() => this.scrollBox.scrollToBottom()}> Pull to bottom </button>*/}
+
+      <ScrollBox />
+      <ValidationSampleWithRefFocus />
+      <RefUsingCreateRef />
       <ValidationSample />
       <EventPractice_functional_component_form />
       <EventPractice_using_functional_components />
