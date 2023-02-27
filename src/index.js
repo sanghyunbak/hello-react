@@ -35,10 +35,19 @@ import ScrollBox from './chapter5_ref/ScrollBox';
 import ScrollBoxWithPullDownMethod
   from './chapter5_ref/ScrollBoxWithPullDownMethod';
 import ParentScrollBox from './chapter5_ref/ParentScrollBox';
+import IterationSample from './chapter6_map/IterationSample';
+import IterationSampleUseState from './chapter6_map/IterationSampleUseState';
+import IterationSampleAddData from './chapter6_map/IterationSampleAddData';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
+      <p> ADD data </p>
+      <IterationSampleAddData />
+      <p> Iteration sample useState</p>
+      <IterationSampleUseState />
+      <p> Iteration sample</p>
+      <IterationSample />
       <ParentScrollBox />
       {/*<ScrollBoxWithPullDownMethod ref={(ref) => this.scrollBox = ref}/>*/}
       {/*<button onClick={() => this.scrollBox.scrollToBottom()}> Pull to bottom </button>*/}
