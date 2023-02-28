@@ -39,10 +39,19 @@ import IterationSample from './chapter6_map/IterationSample';
 import IterationSampleUseState from './chapter6_map/IterationSampleUseState';
 import IterationSampleAddData from './chapter6_map/IterationSampleAddData';
 import IterationSampleDelete from './chapter6_map/IterationSampleDelete';
+import LifeCycleSample from './chapter7_component_lifecycle/LifeCycleSample';
+import ParentLifeCycleSample
+  from './chapter7_component_lifecycle/ParentLifeCycleSample';
+import ParentErrorLifeCycle
+  from './chapter7_component_lifecycle/ParentErrorLifeCycle';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
+      <p> Error Lifecycle example </p>
+      <ParentErrorLifeCycle />
+      <p> lifecycle change sample</p>
+      <ParentLifeCycleSample />
       <p> ADD DELETE DATA</p>
       <IterationSampleDelete />
       <p> ADD data </p>
