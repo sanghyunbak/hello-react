@@ -44,10 +44,57 @@ import ParentLifeCycleSample
   from './chapter7_component_lifecycle/ParentLifeCycleSample';
 import ParentErrorLifeCycle
   from './chapter7_component_lifecycle/ParentErrorLifeCycle';
+import Counter from './chapter8_hooks/Counter';
+import Info from './chapter8_hooks/Info';
+import InfoUseEffect from './chapter8_hooks/InfoUseEffect';
+import UseEffectOnlyFirstRender
+  from './chapter8_hooks/UseEffectOnlyFirstRender';
+import UseEffectFirstRenderSomeParameter
+  from './chapter8_hooks/UseEffectFirstRenderSomeParameter';
+import UseEffectCleanUp from './chapter8_hooks/UseEffectCleanUp';
+import ParentUseEffectCleanUp from './chapter8_hooks/ParentUseEffectCleanup';
+import CounterWithUseReducer from './chapter8_hooks/CounterWithUseReducer';
+import ReducerInfo from './chapter8_hooks/ReducerInfo';
+import Average from './chapter8_hooks/Average';
+import UseMemoAverage from './chapter8_hooks/UseMemoAverage';
+import UseCallbackAverage from './chapter8_hooks/UseCallbackAverage';
+import UseRefAverage from './chapter8_hooks/UseRefAverage';
+import LocalVarNotUseRef from './chapter8_hooks/LocalVarNotUseRef';
+import LocalVarUseRef from './chapter8_hooks/LocalVarUseRef';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
+      <p>Local Variable useRef</p>
+      <LocalVarUseRef />
+      <p>LocalVar not useRef</p>
+      <LocalVarNotUseRef />
+      <p>useRef</p>
+      <UseRefAverage />
+      <p>useCallback</p>
+      <UseCallbackAverage />
+      <p>UseMemo calculate Average</p>
+      <UseMemoAverage />
+      <p>Average with useMemo</p>
+      <Average />
+      <p> Input with useReducer </p>
+      <ReducerInfo />
+      <p> useReducer Counter</p>
+      <CounterWithUseReducer />
+      <p>useEffect return clean up function </p>
+      <ParentUseEffectCleanUp />
+      <p>useEffect only run when name parameter change</p>
+      <UseEffectFirstRenderSomeParameter />
+      <p> useEffect only first render</p>
+      <UseEffectOnlyFirstRender />
+      <p> useEffect example</p>
+
+      <InfoUseEffect />
+      <p> multiple state </p>
+      <Info />
+      <p> useState example </p>
+      <Counter />
       <p> Error Lifecycle example </p>
       <ParentErrorLifeCycle />
       <p> lifecycle change sample</p>
