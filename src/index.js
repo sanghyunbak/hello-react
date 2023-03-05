@@ -62,65 +62,71 @@ import UseRefAverage from './chapter8_hooks/UseRefAverage';
 import LocalVarNotUseRef from './chapter8_hooks/LocalVarNotUseRef';
 import LocalVarUseRef from './chapter8_hooks/LocalVarUseRef';
 import SassComponent from './chapter9_component_styling/SassComponent';
-
+import CSSModule from './chapter9_component_styling/CSSModule';
+import CSSModuleTemplateLiteral
+  from './chapter9_component_styling/CSSModuleTemplateLiteral';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
+      <p>Inverted CSS Module </p>
+      <CSSModuleTemplateLiteral/>
+      <p> Test CSS Module</p>
+      <CSSModule/>
       <p>Rainbow</p>
-      <SassComponent />
+      <SassComponent/>
       <p>Local Variable useRef</p>
-      <LocalVarUseRef />
+      <LocalVarUseRef/>
       <p>LocalVar not useRef</p>
-      <LocalVarNotUseRef />
+      <LocalVarNotUseRef/>
       <p>useRef</p>
-      <UseRefAverage />
+      <UseRefAverage/>
       <p>useCallback</p>
-      <UseCallbackAverage />
+      <UseCallbackAverage/>
       <p>UseMemo calculate Average</p>
-      <UseMemoAverage />
+      <UseMemoAverage/>
       <p>Average with useMemo</p>
-      <Average />
+      <Average/>
       <p> Input with useReducer </p>
-      <ReducerInfo />
+      <ReducerInfo/>
       <p> useReducer Counter</p>
-      <CounterWithUseReducer />
+      <CounterWithUseReducer/>
       <p>useEffect return clean up function </p>
-      <ParentUseEffectCleanUp />
+      <ParentUseEffectCleanUp/>
       <p>useEffect only run when name parameter change</p>
-      <UseEffectFirstRenderSomeParameter />
+      <UseEffectFirstRenderSomeParameter/>
       <p> useEffect only first render</p>
-      <UseEffectOnlyFirstRender />
+      <UseEffectOnlyFirstRender/>
       <p> useEffect example</p>
 
-      <InfoUseEffect />
+      <InfoUseEffect/>
       <p> multiple state </p>
-      <Info />
+      <Info/>
       <p> useState example </p>
-      <Counter />
+      <Counter/>
       <p> Error Lifecycle example </p>
-      <ParentErrorLifeCycle />
+      <ParentErrorLifeCycle/>
       <p> lifecycle change sample</p>
-      <ParentLifeCycleSample />
+      <ParentLifeCycleSample/>
       <p> ADD DELETE DATA</p>
-      <IterationSampleDelete />
+      <IterationSampleDelete/>
       <p> ADD data </p>
-      <IterationSampleAddData />
+      <IterationSampleAddData/>
       <p> Iteration sample useState</p>
-      <IterationSampleUseState />
+      <IterationSampleUseState/>
       <p> Iteration sample</p>
-      <IterationSample />
-      <ParentScrollBox />
+      <IterationSample/>
+      <ParentScrollBox/>
       {/*<ScrollBoxWithPullDownMethod ref={(ref) => this.scrollBox = ref}/>*/}
       {/*<button onClick={() => this.scrollBox.scrollToBottom()}> Pull to bottom </button>*/}
 
-      <ScrollBox />
-      <ValidationSampleWithRefFocus />
-      <RefUsingCreateRef />
-      <ValidationSample />
-      <EventPractice_functional_component_form />
-      <EventPractice_using_functional_components />
-      <EventPractice_using_class_components />
+      <ScrollBox/>
+      <ValidationSampleWithRefFocus/>
+      <RefUsingCreateRef/>
+      <ValidationSample/>
+      <EventPractice_functional_component_form/>
+      <EventPractice_using_functional_components/>
+      <EventPractice_using_class_components/>
       <EventPracticeWithState/>
       <EventPracticeOnChange/>
       <EventPractice/>
