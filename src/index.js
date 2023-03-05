@@ -61,11 +61,14 @@ import UseCallbackAverage from './chapter8_hooks/UseCallbackAverage';
 import UseRefAverage from './chapter8_hooks/UseRefAverage';
 import LocalVarNotUseRef from './chapter8_hooks/LocalVarNotUseRef';
 import LocalVarUseRef from './chapter8_hooks/LocalVarUseRef';
+import SassComponent from './chapter9_component_styling/SassComponent';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
+      <p>Rainbow</p>
+      <SassComponent />
       <p>Local Variable useRef</p>
       <LocalVarUseRef />
       <p>LocalVar not useRef</p>
