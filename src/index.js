@@ -65,10 +65,13 @@ import SassComponent from './chapter9_component_styling/SassComponent';
 import CSSModule from './chapter9_component_styling/CSSModule';
 import CSSModuleTemplateLiteral
   from './chapter9_component_styling/CSSModuleTemplateLiteral';
+import TodoApp from './chapter10_todolist/TodoApp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
+      <p> Todo Apps </p>
+      <TodoApp>Make Todo App</TodoApp>
       <p>Inverted CSS Module </p>
       <CSSModuleTemplateLiteral/>
       <p> Test CSS Module</p>
@@ -141,7 +144,7 @@ root.render(
       {/*<AppAddStyle/>*/}
       {/*<AppNull/>*/}
       {/*<AppVarTest/>*/}
-      {/*<App/>*/}
+      {/*<TodoApp/>*/}
     </React.StrictMode>,
 );
 
