@@ -11,61 +11,61 @@ import AppTestCss from './add_css';
 import StateTest from './state_test';
 import StateTestWithoutConstructor from './state_class_wo_constructor';
 import SyncSetStateWithArrowFunction from './sync_setState_with_arrow_function';
-import CallBack from './chapter3_component/call_back';
-import Say from './chapter3_component/Say';
-import SayColor from './chapter3_component/SayColor';
-import EventPractice from './chapter4_event_hendling/EventPractice';
+import CallBack from './components/chapter3_component/call_back';
+import Say from './components/chapter3_component/Say';
+import SayColor from './components/chapter3_component/SayColor';
+import EventPractice from './components/chapter4_event_hendling/EventPractice';
 import EventPracticeOnChange
-  from './chapter4_event_hendling/EventPracticeOnChange';
+  from './components/chapter4_event_hendling/EventPracticeOnChange';
 import EventPracticeWithState
-  from './chapter4_event_hendling/EventPracticeWithState';
+  from './components/chapter4_event_hendling/EventPracticeWithState';
 import EventPractice_using_method
-  from './chapter4_event_hendling/EventPractice_using_class_components';
+  from './components/chapter4_event_hendling/EventPractice_using_class_components';
 import EventPractice_using_functional_components
-  from './chapter4_event_hendling/EventPractice_using_functional_components';
+  from './components/chapter4_event_hendling/EventPractice_using_functional_components';
 import EventPractice_using_class_components
-  from './chapter4_event_hendling/EventPractice_using_class_components';
+  from './components/chapter4_event_hendling/EventPractice_using_class_components';
 import EventPractice_functional_component_form
-  from './chapter4_event_hendling/EventPractice_functional_component_form';
-import ValidationSample from './chapter5_ref/ValidationSample';
-import RefUsingCreateRef from './chapter5_ref/RefUsingCreateRef';
+  from './components/chapter4_event_hendling/EventPractice_functional_component_form';
+import ValidationSample from './components/chapter5_ref/ValidationSample';
+import RefUsingCreateRef from './components/chapter5_ref/RefUsingCreateRef';
 import ValidationSampleWithRefFocus
-  from './chapter5_ref/ValidationSampleWithRefFocus';
-import ScrollBox from './chapter5_ref/ScrollBox';
+  from './components/chapter5_ref/ValidationSampleWithRefFocus';
+import ScrollBox from './components/chapter5_ref/ScrollBox';
 import ScrollBoxWithPullDownMethod
-  from './chapter5_ref/ScrollBoxWithPullDownMethod';
-import ParentScrollBox from './chapter5_ref/ParentScrollBox';
-import IterationSample from './chapter6_map/IterationSample';
-import IterationSampleUseState from './chapter6_map/IterationSampleUseState';
-import IterationSampleAddData from './chapter6_map/IterationSampleAddData';
-import IterationSampleDelete from './chapter6_map/IterationSampleDelete';
-import LifeCycleSample from './chapter7_component_lifecycle/LifeCycleSample';
+  from './components/chapter5_ref/ScrollBoxWithPullDownMethod';
+import ParentScrollBox from './components/chapter5_ref/ParentScrollBox';
+import IterationSample from './components/chapter6_map/IterationSample';
+import IterationSampleUseState from './components/chapter6_map/IterationSampleUseState';
+import IterationSampleAddData from './components/chapter6_map/IterationSampleAddData';
+import IterationSampleDelete from './components/chapter6_map/IterationSampleDelete';
+import LifeCycleSample from './components/chapter7_component_lifecycle/LifeCycleSample';
 import ParentLifeCycleSample
-  from './chapter7_component_lifecycle/ParentLifeCycleSample';
+  from './components/chapter7_component_lifecycle/ParentLifeCycleSample';
 import ParentErrorLifeCycle
-  from './chapter7_component_lifecycle/ParentErrorLifeCycle';
-import Counter from './chapter8_hooks/Counter';
-import Info from './chapter8_hooks/Info';
-import InfoUseEffect from './chapter8_hooks/InfoUseEffect';
+  from './components/chapter7_component_lifecycle/ParentErrorLifeCycle';
+import Counter from './components/chapter8_hooks/Counter';
+import Info from './components/chapter8_hooks/Info';
+import InfoUseEffect from './components/chapter8_hooks/InfoUseEffect';
 import UseEffectOnlyFirstRender
-  from './chapter8_hooks/UseEffectOnlyFirstRender';
+  from './components/chapter8_hooks/UseEffectOnlyFirstRender';
 import UseEffectFirstRenderSomeParameter
-  from './chapter8_hooks/UseEffectFirstRenderSomeParameter';
-import UseEffectCleanUp from './chapter8_hooks/UseEffectCleanUp';
-import ParentUseEffectCleanUp from './chapter8_hooks/ParentUseEffectCleanup';
-import CounterWithUseReducer from './chapter8_hooks/CounterWithUseReducer';
-import ReducerInfo from './chapter8_hooks/ReducerInfo';
-import Average from './chapter8_hooks/Average';
-import UseMemoAverage from './chapter8_hooks/UseMemoAverage';
-import UseCallbackAverage from './chapter8_hooks/UseCallbackAverage';
-import UseRefAverage from './chapter8_hooks/UseRefAverage';
-import LocalVarNotUseRef from './chapter8_hooks/LocalVarNotUseRef';
-import LocalVarUseRef from './chapter8_hooks/LocalVarUseRef';
-import SassComponent from './chapter9_component_styling/SassComponent';
-import CSSModule from './chapter9_component_styling/CSSModule';
+  from './components/chapter8_hooks/UseEffectFirstRenderSomeParameter';
+import UseEffectCleanUp from './components/chapter8_hooks/UseEffectCleanUp';
+import ParentUseEffectCleanUp from './components/chapter8_hooks/ParentUseEffectCleanup';
+import CounterWithUseReducer from './components/chapter8_hooks/CounterWithUseReducer';
+import ReducerInfo from './components/chapter8_hooks/ReducerInfo';
+import Average from './components/chapter8_hooks/Average';
+import UseMemoAverage from './components/chapter8_hooks/UseMemoAverage';
+import UseCallbackAverage from './components/chapter8_hooks/UseCallbackAverage';
+import UseRefAverage from './components/chapter8_hooks/UseRefAverage';
+import LocalVarNotUseRef from './components/chapter8_hooks/LocalVarNotUseRef';
+import LocalVarUseRef from './components/chapter8_hooks/LocalVarUseRef';
+import SassComponent from './components/chapter9_component_styling/SassComponent';
+import CSSModule from './components/chapter9_component_styling/CSSModule';
 import CSSModuleTemplateLiteral
-  from './chapter9_component_styling/CSSModuleTemplateLiteral';
-import TodoApp from './chapter10_todolist/TodoApp';
+  from './components/chapter9_component_styling/CSSModuleTemplateLiteral';
+import TodoApp from './components/chapter10_todolist/TodoApp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
