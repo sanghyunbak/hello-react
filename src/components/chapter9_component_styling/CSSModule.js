@@ -5,7 +5,7 @@ import React from 'react';
 const MyComponent = () => {
   return (
       <div className={styles.wrapper}>
-        hello! I'm <sapn className={"something"}>CSS Module</sapn>
+        hello! I'm <span className={"something"}>CSS Module</span>
       </div>
   );
 };
