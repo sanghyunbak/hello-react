@@ -25,7 +25,7 @@ const TodoInsert = ({onInsert}) => {
   );
 
   return (
-      <form className={"TodoInsert"}>
+      <form className={"TodoInsert"} onSubmit={onSubmit}>
         <input
             placeholder={'Insert todo job'}
             value={value}

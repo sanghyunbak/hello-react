@@ -7,12 +7,12 @@ const TodoApp = () => {
   const [todos, setTodos] = useState([
     {
       id: 1,
-      text: "Let\'s check it out react basic",
+      text: "Let's check it out react basic",
       checked: true,
     },
     {
       id: 2,
-      text: "Let\'s styling component",
+      text: "Let's styling component",
       checked: true,
     },
     {
@@ -37,13 +37,30 @@ const TodoApp = () => {
       [todos],
   );
 
+  const onRemove = useCallback(
+      (id) => {
+        setTodos(todos.filter(todo => todo.id !== id));
+      },
+      [todos],
+  );
+
+  const onToggle = useCallback(
+      id => {
+        setTodos(
+            todos.map(todo =>
+              todo.id === id ? { ...todo, checked: !todo.checked } : todo,
+            ),
+        );
+      },
+      [todos],
+  )
 
   return (
       <TodoTemplate>
         If you set onInsert attribute's value to onInsert() not onInsert
         chrome will raise exception of 'too many rerender'
         <TodoInsert onInsert={onInsert}/>
-        <TodoList todos={todos}/>
+        <TodoList todos={todos} onRemove={onRemove} onToggle={onToggle}/>
       </TodoTemplate>
   );
 };
