@@ -66,10 +66,13 @@ import CSSModule from './components/chapter9_component_styling/CSSModule';
 import CSSModuleTemplateLiteral
   from './components/chapter9_component_styling/CSSModuleTemplateLiteral';
 import TodoApp from './components/chapter10_todolist/TodoApp';
+import OptApp from './components/chapter11_component_optimization/OptApp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
+      <p> Opt Todo Apps </p>
+      <OptApp></OptApp>
       <p> Todo Apps </p>
       <TodoApp>Make Todo App</TodoApp>
       <p>Inverted CSS Module </p>
