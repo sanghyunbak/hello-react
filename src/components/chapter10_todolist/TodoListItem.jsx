@@ -7,9 +7,9 @@ import {
 import cn from 'classnames';
 import './TodoListItem.scss';
 
-const TodoListItem = ({todo, onRemove, onToggle}) => {
-  const {id, text, checked} = todo;
-  console.log(`😎😎😎todo: ${JSON.stringify(todo)}`);
+const TodoListItem = ({todo: {id, text, checked}, onRemove, onToggle}) => {
+  // const {id, text, checked} = todo;
+  // console.log(`😎😎😎todo: ${JSON.stringify(todo)}`);
   console.log(`😎😎😎text: ${JSON.stringify(text)}`);
   console.log(`😎😎😎checked: ${JSON.stringify(text)}`);
 
