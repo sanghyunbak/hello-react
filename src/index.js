@@ -67,10 +67,14 @@ import CSSModuleTemplateLiteral
   from './components/chapter9_component_styling/CSSModuleTemplateLiteral';
 import TodoApp from './components/chapter10_todolist/TodoApp';
 import OptApp from './components/chapter11_component_optimization/OptApp';
+import UseReducerApp
+      from './components/chapter11_component_optimization/UseReducerApp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
+      <p>UseReducerApp</p>
+      <UseReducerApp></UseReducerApp>
       <p> Opt Todo Apps </p>
       <OptApp></OptApp>
       <p> Todo Apps </p>
@@ -123,8 +127,7 @@ root.render(
       <p> Iteration sample</p>
       <IterationSample/>
       <ParentScrollBox/>
-      {/*<ScrollBoxWithPullDownMethod ref={(ref) => this.scrollBox = ref}/>*/}
-      {/*<button onClick={() => this.scrollBox.scrollToBottom()}> Pull to bottom </button>*/}
+
 
       <ScrollBox/>
       <ValidationSampleWithRefFocus/>
@@ -136,6 +139,10 @@ root.render(
       <EventPracticeWithState/>
       <EventPracticeOnChange/>
       <EventPractice/>
+
+
+      {/*<ScrollBoxWithPullDownMethod ref={(ref) => this.scrollBox = ref}/>*/}
+      {/*<button onClick={() => this.scrollBox.scrollToBottom()}> Pull to bottom </button>*/}
       {/*<SayColor/>*/}
       {/*<Say/>*/}
       {/*<CallBack/>*/}
