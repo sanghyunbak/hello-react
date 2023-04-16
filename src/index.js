@@ -69,10 +69,20 @@ import TodoApp from './components/chapter10_todolist/TodoApp';
 import OptApp from './components/chapter11_component_optimization/OptApp';
 import UseReducerApp
       from './components/chapter11_component_optimization/UseReducerApp';
+import WithoutImmer from './components/chapter12_immer/WithoutImmer';
+import WithImmer from './components/chapter12_immer/WithImmer';
+import FunctionalUpdateWithImmer
+      from './components/chapter12_immer/FunctionalUpdateWithImmer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
+      <p>Functional update with immer</p>
+      <FunctionalUpdateWithImmer></FunctionalUpdateWithImmer>
+      <p>WithImmer</p>
+      <WithImmer></WithImmer>
+      <p>WithoutImmer</p>
+      <WithoutImmer></WithoutImmer>
       <p>UseReducerApp</p>
       <UseReducerApp></UseReducerApp>
       <p> Opt Todo Apps </p>
