@@ -73,10 +73,15 @@ import WithoutImmer from './components/chapter12_immer/WithoutImmer';
 import WithImmer from './components/chapter12_immer/WithImmer';
 import FunctionalUpdateWithImmer
       from './components/chapter12_immer/FunctionalUpdateWithImmer';
+import {BrowserRouter} from 'react-router-dom';
+import RouterApp from './components/chapter13_router/RouterApp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
+          <BrowserRouter>
+                <RouterApp />
+          </BrowserRouter>
       <p>Functional update with immer</p>
       <FunctionalUpdateWithImmer></FunctionalUpdateWithImmer>
       <p>WithImmer</p>
