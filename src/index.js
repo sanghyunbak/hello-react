@@ -79,9 +79,11 @@ import RouterApp from './components/chapter13_router/RouterApp';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-          <BrowserRouter>
-                <RouterApp />
-          </BrowserRouter>
+
+      <BrowserRouter>
+          <p>Router component</p>
+          <RouterApp />
+      </BrowserRouter>
       <p>Functional update with immer</p>
       <FunctionalUpdateWithImmer></FunctionalUpdateWithImmer>
       <p>WithImmer</p>
